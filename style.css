@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    /* Colors */
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%)
+}
+
+/* Apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Light-gray);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+}
+
+/* Container */
+.container {   
+    max-width: 400px;
+    margin: 0px auto;
+}
+
+.card {
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.image {
+    padding: 0;
+    margin: 0;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.bold-text {
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+}
+
+.light-text {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 0;
+    color: var(--Grayish-blue);
+}
+
+.text {
+    text-align: center;
+}
